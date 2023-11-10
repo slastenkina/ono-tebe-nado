@@ -1,1 +1,83 @@
-/* место для вашего кода */
+.header {
+    padding: 92px 50px;
+  }
+  
+  .content-section {
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  .header-content {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    align-items: center;
+  }
+  
+  .header-menu-list {
+    display: flex;
+    gap: 32px;
+    justify-self: start;
+  }
+  
+  .header-menu-item {
+    list-style: circle;
+  }
+  
+  .header-menu-item.active {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .header-menu-item.active a {
+    cursor: default;
+  }
+  
+  .header-menu-link {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-underline-position: under;
+  }
+  
+  .header-menu-item a {
+    cursor: pointer;
+  }
+  
+  .header-logo {
+    display: block;
+    max-width: 148px;
+  }
+  
+  .address {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+    text-underline-position: under;
+    justify-self: end;
+  }
+  
+  .contacts {
+    list-style: none;
+  }
+  
+  .cover {
+    padding: 165px 50px 50px;
+  }
+  
+  .lots {
+    padding: 180px 50px;
+  }
+  
+  .about {
+    padding: 1px 50px;
+  }
+  
+  .footer {
+    padding: 180px 50px 90px;
+  }
+  
