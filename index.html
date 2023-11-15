@@ -12,17 +12,19 @@
   <body>
     <header class="header content-section">
       <div class="header-content">
-        <ul class="header-menu-list">
-          <li class="header-menu-item active">
-            <a class="header-menu-link">главная</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#0">посмотреть лоты</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#0">об аукционе</a>
-          </li>
-        </ul>
+        <nav class="menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-item active">
+              <a class="header-menu-link">главная</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#0">посмотреть лоты</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#0">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
         <a class="header-logo">
           <img
             src="./images/logo-black.svg"
@@ -38,7 +40,7 @@
             <li class="mail">
               <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
             </li>
-            <li class="post-address">
+            <li>
               <p>наб. Принсенграхт 263-265,<br />Амстердам</p>
             </li>
           </ul>
@@ -46,11 +48,103 @@
       </div>
     </header>
 
-    <cover class="cover content-section"></cover>
+    <section class="cover content-section">
+      <section class="overlay">
+        <h1 class="cover-title">
+          <span class="aligned-text"
+            >о<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="aligned-text aligned-text-center"
+            >те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="aligned-text aligned-text-right"
+            ><span class="letter-spacing-extended">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            ></span
+          >
+        </h1>
+        <section class="cover-description">
+          <section class="cover-description-text">
+            <p>Аукцион вещей, в которые никто не верил</p>
+          </section>
+          <button class="bet-button">Сделать ставку</button>
+        </section>
+      </section>
+    </section>
 
-    <lots class="lots content-section"></lots>
+    <section class="lots content-section">
+      <section class="lots-heading">
+        <h2 class="common-heading">Лоты</h2>
+      </section>
+      <ul class="card-list">
+        <li class="card-item card-type-film">
+          <section class="overlay">
+            <a href="#0" class="card-link">
+              <article class="card">
+                <h3 class="card-title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <div class="card-text">
+                  <p class="card-text">
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                    ставка, если бы вы не знали, что режиссёр — Пол Томас
+                    Андерсон?
+                  </p>
+                </div>
+              </article>
+            </a>
+          </section>
+        </li>
 
-    <about class="about content-section"></about>
+        <li class="card-item card-type-book">
+          <section class="overlay">
+            <a href="#0" class="card-link">
+              <article class="card">
+                <h3 class="card-title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <div class="card-text">
+                  <p>
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                    и с переходами на древнеанглийский. В ней одновременно
+                    рассказывается о 16 июня 1904 года и об истории литературы,
+                    начиная с античных времён. И это всё накладывается на
+                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                    Джеймса Джойса?
+                  </p>
+                </div>
+              </article>
+            </a>
+          </section>
+        </li>
+
+        <li class="card-item card-type-picture">
+          <section class="overlay">
+            <a href="#0" class="card-link">
+              <article class="card">
+                <h3 class="card-title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <div class="card-text">
+                  <p>
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                    котиков… Сколько бы вы на такое поставили, если бы не знали,
+                    что это — одна из революционных работ Кандинского?
+                  </p>
+                </div>
+              </article>
+            </a>
+          </section>
+        </li>
+      </ul>
+      <section class="lots-more">
+        <a href="#0" class="lots-more-text">посмотреть больше</a>
+      </section>
+    </section>
+
+    <section class="about content-section"></section>
 
     <footer class="footer content-section"></footer>
   </body>
