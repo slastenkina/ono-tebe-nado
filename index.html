@@ -11,129 +11,108 @@
   </head>
   <body>
     <header class="header content-section">
-      <div class="header-content">
-        <nav class="menu">
-          <ul class="header-menu-list">
-            <li class="header-menu-item active">
-              <a class="header-menu-link">главная</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#0">посмотреть лоты</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-link" href="#0">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header-logo">
-          <img
-            src="./images/logo-black.svg"
-            alt="логотип аукциона"
-            class="header-logo-image">
-        </a>
-        <address class="top address">
-          <ul class="contacts">
-            <li class="phone">
-              <a href="tel:+99995555555">+9 999 555 5555</a>
-            </li>
-            <li class="mail">
-              <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            </li>
-            <li>
-              <p>наб. Принсенграхт 263-265,<br>Амстердам</p>
-            </li>
-          </ul>
-        </address>
-      </div>
+      <nav class="menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-item active">
+            <a class="header-menu-link">главная</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-link" href="#0">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-logo">
+        <img
+          src="./images/logo-black.svg"
+          alt="логотип аукциона"
+          class="header-logo-image">
+      </a>
+      <address class="top address">
+        <a href="tel:+99995555555" class="phone">+9 999 555 5555</a>
+        <br>    <!--в задании рекомендовано в header использовать тег br, в данном случае будет уместно им перенести ссылку на новую строку?-->
+        <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
+      </address>
     </header>
 
     <main>
       <section class="cover content-section">
-        <section class="overlay">
+        <div class="overlay">
           <h1 class="cover-title">
             <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
             <span class="aligned-text aligned-text-center">те<span class="letter-spacing-extended">бе</span></span><span class="aligned-text aligned-text-right">
             <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span>
           </h1>
-          <section class="cover-description">
-            <section class="cover-description-text">
-              <p>Аукцион вещей, в которые никто не верил</p>
-            </section>
+          <div class="cover-description">
+            <p class="cover-description-text">Аукцион вещей, в которые никто не верил</p>
             <button class="bet-button">Сделать ставку</button>
-          </section>
+          </div>
         </section>
       </section>
-    </main>
-
-    <section class="lots content-section">
-      <div class="lots-title">
-        <h2 class="common-title">Лоты</h2>
-      </div>
+    
+      <section class="lots content-section">
+      <h2 class="lots-title common-title">Лоты</h2>
       <ul class="card-list">
         <li class="card-item card-type-film">
-          <section class="overlay">
+          <div class="overlay">
             <a href="#0" class="card-link">
               <article class="card">
                 <h3 class="card-title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <div class="card-text">
-                  <p class="card-text">
+                <p class="card-text">
                     Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                     ставка, если бы вы не знали, что режиссёр — Пол Томас
                     Андерсон?
-                  </p>
-                </div>
+                </p>
+                
               </article>
             </a>
-          </section>
+          </div>
         </li>
 
         <li class="card-item card-type-book">
-          <section class="overlay">
+          <div class="overlay">
             <a href="#0" class="card-link">
               <article class="card">
                 <h3 class="card-title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <div class="card-text">
-                  <p>
-                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
-                    и с переходами на древнеанглийский. В ней одновременно
-                    рассказывается о 16 июня 1904 года и об истории литературы,
-                    начиная с античных времён. И это всё накладывается на
-                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                    Джеймса Джойса?
-                  </p>
-                </div>
+                <p class="card-text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                  и с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
               </article>
             </a>
-          </section>
+          </div>
         </li>
 
         <li class="card-item card-type-picture">
-          <section class="overlay">
+          <div class="overlay">
             <a href="#0" class="card-link">
               <article class="card">
                 <h3 class="card-title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <div class="card-text">
-                  <p>
-                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                    котиков… Сколько бы вы на такое поставили, если бы не знали,
-                    что это — одна из революционных работ Кандинского?
-                  </p>
-                </div>
+                <p class="card-text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков… Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
               </article>
             </a>
-          </section>
+          </div>
         </li>
       </ul>
-      <div class="lots-more">
-        <a href="#0" class="lots-more-text">посмотреть больше</a>
-      </div>
+      <a href="#0" class="lots-more-text">посмотреть больше</a>
     </section>
 
     <section class="about content-section">
@@ -146,9 +125,7 @@
           </a>
         </div>
         <div class="about-content">
-          <div class="about-title">
-            <h2 class="common-title">Об аукционе</h2>
-          </div>
+          <h2 class="about-title common-title">Об аукционе</h2>
           <div class="about-text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -170,20 +147,14 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer class="footer content-section">
       <address class="address">
-        <ul class="contacts">
-          <li class="phone">
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="mail">
-            <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li>
-            <p>наб. Принсенграхт 263-265,<br>Амстердам</p>
-          </li>
-        </ul>
+        <a href="tel:+99995555555" class="phone">+9 999 555 5555</a>
+        <br>    <!--в задании рекомендовано в header использовать тег br, в данном случае будет уместно им перенести ссылку на новую строку?-->
+        <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="menu">
         <ul class="footer-menu-list">
